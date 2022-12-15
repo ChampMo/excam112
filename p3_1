@@ -1,0 +1,7 @@
+# Question 3.1
+def Problem3_1(max_prime =1000):
+    a = list(x for x in range(2, max_prime) if all(x % y != 0 for y in range(2, x)))
+
+    for i in a:
+        if i and i+2 in a:
+            yield (i, i+2)
