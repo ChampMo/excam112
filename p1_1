@@ -1,2 +1,2 @@
 def Problem1_1(a):
-    return list(x for x in range(2, a) if all(x % y != 0 for y in range(2, x)))  
+    return [True if all(a % y != 0 for y in range(2, a)) else False]
