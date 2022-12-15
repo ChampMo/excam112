@@ -1,0 +1,3 @@
+# Problem 4.1 Broadcasting
+def Problem4_1(A,B):
+    return (A+[[i] for i in B] )
